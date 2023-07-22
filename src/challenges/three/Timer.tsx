@@ -60,7 +60,7 @@ export function TimerDisplay() {
 }
 
 export function TimerControls() {
-  const { running, handleReset, toggleRunning } = useContext(TimerContext);
+  const { running, handleReset, toggleRunning, time } = useContext(TimerContext);
   return (
     <HStack>
       {running ? (
@@ -72,7 +72,7 @@ export function TimerControls() {
           Play
         </Button>
       )}
-      <Button onClick={handleReset}>Reset</Button>
+      {time > 0 && <Button onClick={handleReset}>Reset</Button>}
     </HStack>
   );
 }
