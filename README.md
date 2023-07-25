@@ -1,5 +1,8 @@
-# hometownGeneReact
-Created with CodeSandbox
+REACT Exercises
+
+1. Track X and Y coordinates of element on hover
+2. TV Shows search
+3. Timer
 
 screenshots
 
